@@ -27,7 +27,7 @@ function Box({ color }) {
   }
 
   useFrame(
-    (delta) => {
+    (state, delta) => {
       time.current += delta * 1.2;
       let newZ = position.z - (time.current);
 
